@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Sistema de Usuários</h2>
+    <div class="form-group">
+        <input type="hidden" id="userId">
+        <input type="text" id="nome" placeholder="Nome completo">
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="password" id="senha" placeholder="Senha">
+        <button class="btn-save" onclick="salvarUsuario()">Salvar</button>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody id="tabelaCorpo"></tbody>
+    </table>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
