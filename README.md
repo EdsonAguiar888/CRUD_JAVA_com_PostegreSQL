@@ -336,7 +336,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 * **PostgreSQL Driver**
 * **Spring Web**
 
-## 2. Configuração do Banco de Dados (`em application.properties`)
+### 2. Configuração do Banco de Dados (`em application.properties`)
 
 ```properties
 # spring.application.name=spring-boot-com-JAVA
@@ -376,26 +376,9 @@ dto/UsuarioRequestDTO.java
 
 dto/UsuarioResponseDTO.java
 ```
----
----
-## 💻 Como testar!!!
 
- 1. Com o projeto rodando e o Postgres ativo:
-  
- 2. Abra o Postman ou Insomnia.
-  
- 3. Crie uma requisição POST para http://localhost:8080/usuarios.
-  
- 4. No corpo (Body), envie:
-    
-```JSON
+---
 
-{
-  "nome": "João Silva",
-  "email": "joao@email.com",
-  "senha": "123"
-}
-```
 
 ## 📖 Passo a Passo das Operações no Banco de Dados
 
@@ -650,7 +633,7 @@ async function listarUsuarios() {
 ```
 ---
 
-## Utilizando o Postman para testar a API. 
+## 💻 Utilizando o Postman para testar a API. 
 
   Como o seu projeto está usando as anotações do Spring, ele estará rodando por padrão em ``` http://localhost:8080. ```
 
@@ -658,6 +641,7 @@ async function listarUsuarios() {
 
  ### 1. Criar Usuário (POST)
   Este é o primeiro passo para popular seu banco de dados.
+  Crie uma requisição POST para http://localhost:8080/usuarios.
   
   Método: POST
   
@@ -679,14 +663,14 @@ async function listarUsuarios() {
   
  ### 2. Listar Todos (GET)
   Método: GET
-  
+    
   URL: http://localhost:8080/usuarios
   
   Aba Body: Nenhuma (None).
   
     Resposta esperada: Uma lista [] contendo todos os usuários cadastrados.
   
-  3. Atualizar Usuário (PUT)
+ ### 3. Atualizar Usuário (PUT)
   Aqui você precisa passar o ID do usuário que deseja alterar na URL.
   
   Método: PUT
